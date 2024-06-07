@@ -133,6 +133,9 @@ cc_test(
     copts = _COPTS,
     data = glob(["test/fixtures/**"]),
     local_defines = _LOCAL_DEFINES,
+    tags = [
+        "no-sandbox",
+    ],
     deps = [
         ":libuv",
         ":test_headers",
@@ -159,6 +162,9 @@ cc_test(
     }),
     copts = _COPTS,
     local_defines = _LOCAL_DEFINES,
+    tags = [
+        "no-sandbox",
+    ],
     deps = [
         ":libuv",
     ],
