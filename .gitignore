@@ -1,3 +1,5 @@
+MODULE.bazel.lock
+bazel-*
 *.swp
 *.[oa]
 *.l[oa]
